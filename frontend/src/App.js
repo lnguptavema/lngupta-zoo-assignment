@@ -19,7 +19,7 @@ function App() {
 
     try {
       // NEW (replace with your deployed backend URL)
-      const response = await axios.post('https://text-analyzer-backend.onrender.com/api/summarize', { text: input });
+      const response = await axios.post("https://lngupta-zoo-assignment-tdwt.onrender.com/api/summarize",{ text: input });
       setResult(response.data);
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to analyze text. Check if backend is running.');
